@@ -15,16 +15,16 @@ function move(element) {
         element.style.bottom = y + 'px'
         
         function moveCharacter(){ 
-            if(direction === 'west'){
+            if((direction === 'west') && (y > 0)){
                 x-=1
             }
-            if(direction === 'north'){
+            if((direction === 'north') && (window.innerWidth - element.width)){
                 y+=1
             }
-            if(direction === 'east'){
+            if((direction === 'east') && (window.innerWidth - element.width)){
                 x+=1
             }
-            if(direction === 'south'){
+            if((direction === 'south') && (y > document.getElementById('inventory-bar').offsetHeight)){
                 y-=1
             }
             element.style.left = x + 'px'

@@ -1,5 +1,6 @@
 function newInventory(){
     let inventory = document.createElement('div')
+    inventory.setAttribute('id', 'inventory-bar')
     inventory.style.width = '100%'
     inventory.style.height = '100px'
     inventory.style.display = 'flex'
